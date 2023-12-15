@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body{
+   
+    background-attachment: fixed;
+    background-image: url(./img/fundo-hamburger.jpg);
+    
+}
+
+
+.container{
+
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+    position: relative;
+}
+
+
+.container2{
+    margin-left: -50px;
+    margin-right: 250px;
+    width: 40%;
+    height: 150px;
+    display: flex;
+   
+    
+    
+}
+
+.image-burguer{
+    margin-top: -130px;
+    margin-left: -50px;
+   height: 400px;
+   width: 400px;
+   padding: 30px;
+   border: none;
+   
+}
+
+.nome-burguer{
+    margin-top: 30px;
+    width: 500px;
+    height: 90px;
+    margin-right: 50px;
+    border: solid yellow;
+    border-radius: 5px;
+
+}
+
+#buttonnn{
+    margin-right: 5px;
+}
+
+.button-burguer{
+    margin-top: 30px;
+    margin-left: 2px;
+    width: 150px;
+    height: 80px;
+    border-radius: 7px;
+    color: #000000;
+    padding-right: 0;
+    border: solid #000000;
+    background-color: rgb(234, 188, 8);
+    -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 70%, 90% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 75% 100%, 0 100%);
+    box-shadow: 0 0 10px rgb(0, 0, 0, 1);
+    font-family: verdana;
+    font-size: 16px;
+    font-weight: bolder;
+    text-decoration: none;
+    cursor: pointer;
+
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
+
+    transition: 0.2s;
+    
+}
+
+button:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 100%);
+  } 
+
+  button:after {
+
+    margin: -5px 15px;
+    right: 0px;
+  }
+
+  buttona:ctive span:nth-child(4) {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+  }
+
+  button:active {
+    border: 3px outset rgb(234, 241, 234);
+    color: rgb(241, 198, 7);
+    background: linear-gradient(90deg, #8133ff, #8133ff);
+    text-shadow: 0px 0px 4px #ccc;
+    box-shadow: 0 0 10px #051102, 0 0 40px #061502, 0 0 80px #fff;
+    transition-delay: 1s;
+  }
+  
+  button span {
+    position: absolute;
+    display: block;
+  }
+  
+  button span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #011302);
+  }
+  button:active span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+  }
+  button span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #f1eeee);
+  }
+  button:active span:nth-child(2) {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+  }
+  button span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #e1dbdb);
+  }
+  button:active span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+  }
+  
+  button span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #ded5d5);
+  }
+  button:active span:nth-child(4) {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+  }
+
+  ul{
+   
+    list-style: none;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  li{
+
+    border: 2px solid #8133ff;
+    border-radius: 7px;
+    padding: 5px;
+  }
+
+  img{
+    width: 100%;
+    border-radius: 7px;
+   
+  }
+
+  p{
+    color: #ffffff;
+    
+  }
+
+  .name-price{
+    color: #79cb15;
+    font-weight: bold;
+  }
+
+
+
+
+  @media (max-width: 900px){
+
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    }
+
+.container{
+  width: 600px;
+  height: 200px;
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 100px;
+  margin-left: -405px;
+}    
+
+.container2{
+  height: 100vh;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin-left: -15%;
+  align-items: center;
+  margin-top: 1px;
+  position: relative;
+  margin-bottom: 50px;
+  
+}
+
+.image-burguer{
+  width: 200px;
+  height: 250px;
+  margin-left: 315px;
+  margin-top: 10px;
+  margin-right: -43px;
+}
+
+.nome-burguer{
+
+  width: 250px;
+  height: 50px;
+}
+
+.button-burguer{
+  width: 90px;
+  height: 60px;
+  margin-top: 500px;
+  position: relative;
+  margin-bottom: 150px;
+  font-size: 10px;
+  
+  
+}
+
+.buttonnn {
+
+  margin-left: -900px;
+
+}
+
+ul{
+
+  margin-top: 90px;
+  display: grid;
+  grid-template-columns: 150px 150px;
+  justify-content: center;
+  list-style: none;
+  margin-left: 5px;
+  
+  margin-bottom: 30px;
+}
+
+h1{
+  margin-left: 80px;
+  margin-top: 70px;
+  width: 500px;
+  margin-right: 100px;
+  font-size: 30px;
+  
+}
+
+.texto{
+  margin-top: 20px;
+  font-size: 30px ;
+  margin-left: 120px;
+  margin-bottom: -120px;
+}
+
+.desconto{
+  display: block;
+  margin-left: 90px;
+  margin-bottom: 10px;
+  
+}
+
+  }
